@@ -1,6 +1,6 @@
 # Space Wiki
 
-A lightweight **static astronomy wiki** built as a university front-end project.
+A basic **static astronomy wiki** built as a university front-end project.
 
 ## Screenshots
 
