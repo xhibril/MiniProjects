@@ -4,13 +4,10 @@ A lightweight **static astronomy wiki** built as a university front-end project.
 
 ## Screenshots
 
-**Home / Solar System**  
 <img src="screenshots/home.png" width="600">
 
-**Explore More**  
 <img src="screenshots/explore.png" width="600">
 
-**Galaxy Viewer**  
 <img src="screenshots/more.png" width="600">
 
 ## Tech Stack ▪️
