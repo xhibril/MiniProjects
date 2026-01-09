@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minHeight="300.0" minWidth="100.0" prefHeight="606.0" prefWidth="237.0" styleClass="side-anchor-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ButtonsController">
+    <children>
+      <ImageView fitHeight="111.0" fitWidth="117.0" layoutX="60.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/piggyBank.gif" />
+         </image>
+      </ImageView>
+        <!-- Main Buttons -->
+        <VBox fx:id="mainButtons" alignment="CENTER" layoutX="64.8" layoutY="240.8" prefHeight="186.0" prefWidth="126.0" spacing="50.0" AnchorPane.bottomAnchor="242.2" AnchorPane.leftAnchor="43.0" AnchorPane.topAnchor="230.0">
+            <children>
+                <Button fx:id="addBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="94.0" styleClass="custom-button" stylesheets="@style.css" text="Add" />
+                <Button fx:id="viewBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="custom-button" stylesheets="@style.css" text="View" />
+            </children>
+        </VBox>
+
+        <!-- Secondary Buttons -->
+        <VBox fx:id="secondaryButtons" alignment="CENTER" layoutX="53.0" layoutY="158.0" prefHeight="186.0" prefWidth="126.0" spacing="50.0" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="43.0" AnchorPane.topAnchor="240.0">
+            <children>
+                <Button fx:id="spendingsBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="94.0" styleClass="custom-button" stylesheets="@style.css" text="Spendings" />
+                <Button fx:id="earningsBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="custom-button" stylesheets="@style.css" text="Earnings" />
+            </children>
+        </VBox>
+
+        <!-- Amount Input -->
+        <VBox fx:id="amountInputContainer" alignment="CENTER" layoutX="63.0" layoutY="168.0" prefHeight="186.0" prefWidth="126.0" spacing="50.0" AnchorPane.bottomAnchor="242.0" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="240.8">
+            <children>
+                <TextField fx:id="amountInput" />
+            </children>
+        </VBox>
+
+        <!-- View Buttons -->
+        <VBox fx:id="viewButtons" alignment="CENTER" layoutX="63.0" layoutY="168.0" prefHeight="186.0" prefWidth="126.0" spacing="50.0" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="43.0" AnchorPane.topAnchor="240.0">
+            <children>
+                <Button fx:id="dailyViewBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="94.0" styleClass="custom-button" stylesheets="@style.css" text="Daily" />
+                <Button fx:id="monthlyViewBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="custom-button" stylesheets="@style.css" text="Monthly" />
+                <Button fx:id="yearlyViewBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="94.0" styleClass="custom-button" stylesheets="@style.css" text="Yearly" />
+            </children>
+        </VBox>
+
+<VBox fx:id="dailyScrollContainer" alignment="CENTER" fillWidth="false" layoutX="57.6" layoutY="163.2" prefHeight="202.0" prefWidth="139.0" AnchorPane.bottomAnchor="225.0" AnchorPane.leftAnchor="47.0" AnchorPane.rightAnchor="51.0" AnchorPane.topAnchor="153.0">
+
+    <children>
+        <ScrollPane fx:id="dailyScrollPane" fitToHeight="true" fitToWidth="true" pickOnBounds="false" prefHeight="148.0" prefWidth="133.0" snapToPixel="false" style="-fx-region-border: transparent;" stylesheets="@style.css" VBox.vgrow="ALWAYS">
+            <content>
+                <AnchorPane prefHeight="166.0" prefWidth="130.0" snapToPixel="false">
+                    <effect>
+                        <Blend />
+                    </effect>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</VBox>
+
+      <VBox fx:id="viewCategoryContainer" alignment="CENTER" layoutX="53.0" layoutY="163.0" prefHeight="186.0" prefWidth="126.0" spacing="50.0" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="43.0" AnchorPane.topAnchor="240.0">
+         <children>
+            <Button fx:id="spendingsViewBtn" mnemonicParsing="false" prefHeight="30.0" prefWidth="94.0" styleClass="custom-button" stylesheets="@style.css" text="Spendings" />
+            <Button fx:id="earningsViewBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" styleClass="custom-button" stylesheets="@style.css" text="Earnings" />
+         </children>
+      </VBox>
+      <HBox fx:id="backButtonContainer" alignment="CENTER" layoutX="55.0" layoutY="547.0" prefHeight="26.0" prefWidth="164.0" spacing="10" styleClass="backButtonHBox" stylesheets="@style.css" AnchorPane.bottomAnchor="32.60000000000002" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="60.19999999999999">
+         <children>
+            <Button fx:id="backButton" mnemonicParsing="false" styleClass="custom-back-button" stylesheets="@style.css" text="Back" />
+         </children></HBox>
+
+    </children>
+</AnchorPane>

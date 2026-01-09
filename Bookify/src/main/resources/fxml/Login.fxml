@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="loginRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@../stye.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+   <children>
+      <AnchorPane fx:id="loginContainer" layoutX="350.0" layoutY="236.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="14.0" layoutY="140.0" prefHeight="18.0" prefWidth="144.0" text="Don’t have an account?" />
+            <TextField fx:id="loginUsernameField" alignment="CENTER" layoutX="26.0" layoutY="43.0" promptText="Username" />
+            <TextField fx:id="loginPasswordField" alignment="CENTER" layoutX="27.0" layoutY="87.0" promptText="Password" />
+            <Hyperlink fx:id="goToSignUpPage" layoutX="140.0" layoutY="137.0" text="Signup" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="appTitleLabel" alignment="CENTER" layoutX="359.0" layoutY="54.0" prefHeight="38.0" prefWidth="182.0" text="Bookify" textFill="WHITE" />
+      <Label fx:id="authTitleLabel" alignment="CENTER" layoutX="365.0" layoutY="185.0" prefWidth="170.0" text="LOGIN" textFill="WHITE" />
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="365.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+           <Image url="@/appIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

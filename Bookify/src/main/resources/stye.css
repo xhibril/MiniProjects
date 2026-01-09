@@ -1,0 +1,82 @@
+#adminRoot, #signupRoot, #loginRoot, #userRoot  {
+-fx-background-color: #efeddb;
+}
+
+#authTitleLabel{
+-fx-background-color: #ffffff;
+-fx-padding: 8px 60px;
+-fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-background-color: #e0cfbb;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10;
+}
+
+#appTitleLabel, #pageSpecifier{
+-fx-background-color: #ffffff;
+-fx-padding: 8px 60px;
+-fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-background-color: #d3b695;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10;
+}
+
+#adminLogoutBtn, #userLogoutBtn {
+-fx-background-color: #ffffff;
+-fx-padding: 8px 60px;
+-fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-background-color: #f88b8b;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10;
+}
+
+.button {
+-fx-background-color: #FFFFFF;
+-fx-text-fill: white;
+-fx-padding: 8px 60px;
+-fx-background-radius: 10;
+-fx-font-weight: bold;
+-fx-background-color: #877988;
+-fx-border-width: 1px;
+-fx-border-radius: 10;
+}
+
+#createBtn, removeBtn{
+-fx-background-color: #FFFFFF;
+-fx-background-radius: 50;
+-fx-font-weight: bold;
+-fx-padding:0;
+-fx-background-color: #98f4a3;
+-fx-border-color: #FFFFFF;
+-fx-border-width: 1.5px;
+-fx-border-radius: 50
+}
+
+#removeBtn{
+-fx-background-color: #FFFFFF;
+-fx-background-radius: 50;
+-fx-font-weight: bold;
+-fx-padding:0;
+-fx-background-color: #f88b8b;
+-fx-border-color: #FFFFFF;
+-fx-border-width: 1.5px;
+-fx-border-radius: 50
+}
+
+#adminHomeButton, #userHomeButton {
+-fx-background-color: transparent;
+-fx-border-color: transparent;
+}
+
+#pageSpecifier{
+-fx-padding: 8px 70px;
+}
+
+
+
+
