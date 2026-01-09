@@ -1,0 +1,100 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+a {
+    color: black;
+}
+
+.nav-bar {
+    position: relative;
+}
+
+.nav-bar a {
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+
+.site-title {
+    position: absolute;
+    left: 0;
+    margin-left: 2rem;
+    margin-top: 0;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+
+
+.main-section {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    margin-top: 2rem;
+
+}
+
+.topic-header {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: 100%;
+}
+
+.topic-title {
+    font-size: 5rem;
+    margin-left: 2rem;
+}
+
+.sort-close,
+.sort-large {
+    width: 8rem;
+    height: 2rem;
+    align-self: center;
+    border-radius: .2rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.sort-close:hover,
+.sort-large:hover {
+    width: 8rem;
+    height: 2rem;
+    align-self: center;
+    border-radius: .2rem;
+    cursor: pointer;
+    transform: translateY(-1.5px);
+
+}
+
+/* text for which viewing mode is selected */
+.view-mode {
+    align-self: center;
+    margin-bottom: 2rem;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.facts {
+    margin-bottom: 10rem;
+}
+
+.fact-item {
+    background-color: rgb(170, 167, 167);
+    font-weight: 300;
+}
+
+.fact-item:hover {
+    background-color: rgb(213, 207, 207);
+}

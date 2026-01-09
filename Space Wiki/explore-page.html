@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/explore-page.css">
+    <title>Space Wiki</title>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <h1 class="site-title">SPACE WIKI</h1>
+        <a href="index.html">Home</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="#footer">About us</a>
+        <a href="#footer">Socials</a>
+    </nav>
+
+
+    <section class="main-section">
+
+        <header class="topic-header">
+
+            <h1 class="topic-title" id="topic-title">Select a topic in main page!</h1>
+
+            <button class="sort-close" id="sort-close">Sort by closest</button>
+
+            <button class="sort-large" id="sort-large">Sort by largest</button>
+
+        </header>
+
+        <div class="content">
+
+            <div class="content-left">
+
+                <h1 class="object-name" id="object-name"></h1>
+
+                <div class="topic-desc" id="topic-desc">
+
+                    <p></p>
+
+                </div>
+
+                <div class="facts">
+
+                    <div class="fact-item">
+                        <label>Type</label>
+                        <p class="hidden" id="type"></p>
+                    </div>
+
+                    <div class="fact-item">
+                        <label>Distance</label>
+                        <p class="hidden" id="distance"></p>
+                    </div>
+
+                    <div class="fact-item">
+                        <label>Diameter</label>
+                        <p class="hidden" id="diameter"></p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="content-right">
+                <div class="card">
+
+                    <p class="view-mode" id="view-mode"></p>
+
+                    <div class=img-btn-wrapper>
+
+                        <button type="button" class="left-arrow" id="left-arrow">
+                            <img src="images/other/arrow-pointing-left.png">
+                        </button>
+
+                        <img src="" class="image-slider" id="image-slider">
+
+                        <button type="button" class="right-arrow" id="right-arrow">
+                            <img src="images/other/arrow-pointing-right.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <section class="footer-section">
+
+        <footer class="footer" id="footer">
+            <div class="footer-inner">
+
+                <div class="footer-left">
+                    <h4>About Us</h4>
+
+                    <p id="about-text" class="collapsed">
+                        This website is about space and astronomy, with information on planets,
+                        galaxies, nebulae, and black holes.
+                        <span class="more">
+                            It includes different section that show information based on topic chosen, it
+                            also includes pictures for illustrations and more.
+                        </span>
+                    </p>
+                    <button id="toggle-about">Read more</button>
+                </div>
+
+                <div class="footer-right">
+                    <h4>Socials</h4>
+                    <p>Twitter: @SpaceWiki</p>
+                    <p>Instagram: @SpaceWiki</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+    <script src="js/explore-page.js" type="module" defer></script>
+   <script src="js/ui-interactions.js"  defer></script>
+</body>
+</html>

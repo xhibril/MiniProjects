@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/feedback.css">
+    <title>Space Wiki</title>
+</head>
+<body>
+
+         <p class = "notification" id = "notification">
+             <img src = "/images/check-mark.png">
+             Feedback sent, thank you!</p>
+
+    <nav class="nav-bar">
+        <h1 class="site-title">SPACE WIKI</h1>
+        <a href="index.html">Home</a>
+        <a href="index.html#second-section">Explore more</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="#footer">About us</a>
+        <a href="#footer">Socials</a>
+    </nav>
+
+
+    <section class="main-section">
+        <div class="content">
+
+            <h1 class="title">FEEDBACK</h1>
+
+            <div class="feedback">
+                <form>
+
+                    <p>Name</p>
+                    <input type="text" id="feedback-name" class="input" placeholder="John Smith" >
+
+                    <p>Email</p>
+                    <input type="email" id="feedback-email" class="input" placeholder="example@gmail.com">
+
+                    <p>Message</p>
+                    <textarea rows="20" cols="50" id="feedback-message" placeholder="" maxlength="200"></textarea>
+
+                </form>
+                <button type="submit" id="feedback-btn" class="feedback-btn">Confirm</button>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="footer-section">
+
+        <footer class="footer" id="footer">
+            <div class="footer-inner">
+
+                <div class="footer-left">
+                    <h4>About Us</h4>
+
+                    <p id="about-text" class="collapsed">
+                        This website is about space and astronomy, with information on planets,
+                        galaxies, nebulae, and black holes.
+                        <span class="more">
+                            It includes different section that show information based on topic chosen, it
+                            also includes pictures for illustrations and more.
+                        </span>
+                    </p>
+                    <button id="toggle-about">Read more</button>
+                </div>
+
+                <div class="footer-right">
+                    <h4>Socials</h4>
+                    <p>Twitter: @SpaceWiki</p>
+                    <p>Instagram: @SpaceWiki</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    
+    <script src = "js/feedback.js" defer></script>
+</body>
+
+</html>

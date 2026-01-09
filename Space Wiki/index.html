@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Space Wiki</title>
+</head>
+
+<body>
+
+    <section class="main-section">
+
+        <div class="left-section">
+
+            <div class="planet-list">
+
+                <button class="planet-btn" id="sun" data-planet="Sun">
+                    <div class="planet-item">
+                        <span class="planet-label">Sun</span>
+                        <img src="images/planets/sun.png">
+                    </div>
+                </button>
+
+                <button class="planet-btn" id="mercury" data-planet="Mercury">
+                    <div class="planet-item">
+                        <span class="planet-label">Mercury</span>
+                        <img src="images/planets/mercury.png">
+                    </div>
+                </button>
+
+                <button class="planet-btn" id="venus" data-planet="Venus">
+                    <div class="planet-item">
+                        <span class="planet-label">Venus</span>
+                        <img src="images/planets/venus.png">
+                    </div>
+                </button>
+
+                <button class="planet-btn" id="earth" data-planet="Earth">
+                    <div class="planet-item">
+                        <span class="planet-label">Earth</span>
+                        <img src="images/planets/earth.png">
+                    </div>
+                </button>
+
+                <button class="planet-btn" id="mars" data-planet="Mars">
+                    <div class="planet-item">
+                        <span class="planet-label">Mars</span>
+                        <img src="images/planets/mars.png">
+                    </div>
+                </button>
+
+                <button class="planet-btn" id="jupiter" data-planet="Jupiter">
+                    <div class="planet-item">
+                        <span class="planet-label">Jupiter</span>
+                        <img src="images/planets/jupiter.png">
+                    </div>
+                </button>
+
+                <button class="planet-btn" id="saturn" data-planet="Saturn">
+                    <div class="planet-item">
+                        <span class="planet-label">Saturn</span>
+                        <img src="images/planets/saturn.png">
+                    </div>
+                </button>
+
+                <button class="planet-btn" id="uranus" data-planet="Uranus">
+                    <div class="planet-item">
+                        <span class="planet-label">Uranus</span>
+                        <img src="images/planets/uranus.png">
+                    </div>
+                </button>
+
+                <button class="planet-btn" id="neptune" data-planet="Neptune">
+                    <div class="planet-item">
+                        <span class="planet-label">Neptune</span>
+                        <img src="images/planets/neptune.png">
+                    </div>
+                </button>
+
+
+            </div>
+        </div>
+
+        <div class="right-section">
+
+            <nav class="nav-bar">
+                <a href="index.html">Home</a>
+                <a href="#second-section">Explore more</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="#footer">About us</a>
+                <a href="#footer">Socials</a>
+            </nav>
+
+            <div class="planet-panel">
+                <div class="planet-content">
+
+                    <h1 class="planet-title" id="planet-title"></h1>
+
+                    <p id="planet-desc" class="planet-desc"> </p>
+
+                    <div class="facts">
+                        <div class="fact-item">
+                            <label>Type</label>
+                            <p class="hidden" id="type"></p>
+                        </div>
+
+                        <div class="fact-item">
+                            <label>Distance</label>
+                            <p class="hidden" id="distance"></p>
+                        </div>
+
+                        <div class="fact-item">
+                            <label>Diameter</label>
+                            <p class="hidden" id="diameter"></p>
+                        </div>
+
+                        <div class="fact-item">
+                            <label>Temperature</label>
+                            <p class="hidden" id="temp"></p>
+                        </div>
+                    </div>
+
+
+                    <div class="audio-wrapper">
+
+                        <button class="audio-btn" id="audio-btn">
+                            <img src="images/other/audio-icon.png">
+                        </button>
+
+                        <p class="audio-desc hidden" id="audio-desc"></p>
+
+                        <audio class="audio" id="audio" src=""></audio>
+                    </div>
+
+                    <footer class="fact-text" id="fact-text"></footer>
+                </div>
+
+
+                <div class="background-image">
+                    <img src="" id="planet-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="second-section" id="second-section">
+
+        <header class="second-section-header">
+            <h1 class="header-text" id="header-text">EXPLORE MORE</h1>
+        </header>
+
+        <div class="content">
+
+
+            <div class="content-left">
+
+                <div class="topic-desc" id="topic-desc">
+                    <p></p>
+                </div>
+
+                <button class="learn-more-btn" id="learn-more-btn">Learn more</button>
+            </div>
+
+
+            <div class="content-right">
+
+                <h2 class="topic-title" id="topic-title"></h2>
+
+                <div class="card">
+
+                    <div class=img-btn-wrapper>
+
+                        <button type="button" class="left-arrow" id="left-arrow">
+                            <img src="images/other/arrow-pointing-left.png">
+                        </button>
+
+                        <img src="" class="image-slider" id="image-slider">
+
+                        <button type="button" class="right-arrow" id="right-arrow">
+                            <img src="images/other/arrow-pointing-right.png">
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer-section">
+
+        <footer class="footer" id="footer">
+            <div class="footer-inner">
+
+                <div class="footer-left">
+                    <h4>About Us</h4>
+
+                    <p id="about-text" class="collapsed">
+                        This website is about space and astronomy, with information on planets,
+                        galaxies, nebulae, and black holes.
+                        <span class="more">
+                            It includes different section that show information based on topic chosen, it
+                            also includes pictures for illustrations and more.
+                        </span>
+                    </p>
+
+                    <button id="toggle-about">Read more</button>
+                </div>
+
+                <div class="footer-right">
+                    <h4>Socials</h4>
+                    <p>Twitter: @SpaceWiki</p>
+                    <p>Instagram: @SpaceWiki</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    
+    <script src="js/index.js" type="module" defer></script>
+    <script src="js/ui-interactions.js"  defer></script>
+</body>
+</html>
