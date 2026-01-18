@@ -12,15 +12,15 @@ A lightweight **JavaFX application** for tracking personal finances.
 
 
 ## Tech Stack ▪️
-- Java (JDK 24)
+- Java 
 - JavaFX
 - IntelliJ IDEA
 
 ## Features ▫️
 - Track daily, monthly, and yearly spendings/earnings  
-- Simple and responsive UI  
+- Simple UI  
 - Data saved locally  
-- Visual summaries via `AreaChart`
+- View summaries by `Charts`
 
 ## Run Locally ⚙️ 
 **Requirements:** Java 24+, JavaFX.
