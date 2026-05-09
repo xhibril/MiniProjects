@@ -1,0 +1,20 @@
+.overdue-row {
+    -fx-alignment: center-left;
+    -fx-spacing: 10;
+    -fx-background-radius: 12;
+
+    -fx-padding: 10 14 10 14;
+    -fx-border-radius: 12;
+}
+
+.overdue-title {
+    -fx-text-fill: #1E2430;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+}
+
+.overdue-date {
+    -fx-text-fill: #ff1f1f;
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+}

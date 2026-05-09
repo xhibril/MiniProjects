@@ -1,0 +1,59 @@
+.rightSide {
+    -fx-background-color: linear-gradient(to bottom right, #FFB347, #FF9800);
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+
+.continueBtn {
+    -fx-background-color: linear-gradient(to right, #F59E0B, #F97316);
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-padding: 8 18;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8, 0.2, 0, 2);
+}
+
+.continueBtn:hover {
+    -fx-background-color: linear-gradient(to right, #FBBF24, #FB923C);
+}
+
+.continueBtn:pressed {
+    -fx-background-color: linear-gradient(to right, #D97706, #EA580C);
+    -fx-translate-y: 1;
+}
+
+.continueBtn:focused {
+    -fx-effect: none;
+}
+
+
+.inputFields {
+    -fx-background-color: #F9FAFB;
+    -fx-border-color: #E5E7EB;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-padding: 6 10;
+}
+
+.inputFields:hover {
+    -fx-border-color: #D1D5DB;
+}
+
+.inputFields:focused {
+    -fx-border-color: #FBBF24;
+    -fx-background-color: white;
+}
+
+.authCard {
+    -fx-background-color: white;
+    -fx-background-radius: 18;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.18), 20, 0.2, 0, 6);
+}
+
+.hyperlink:focused {
+    -fx-border-color: transparent;
+    -fx-effect: none;
+}

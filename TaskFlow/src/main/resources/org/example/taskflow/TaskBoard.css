@@ -1,0 +1,403 @@
+.search-field {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-font-size: 14px;
+    -fx-text-fill: #1D2430;
+    -fx-prompt-text-fill: #A0A8B5;
+}
+
+
+.search-field:focused {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+
+.search-icon {
+    -fx-opacity: 0.75;
+    -fx-cursor: hand;
+}
+
+.add-task-btn {
+    -fx-background-color: linear-gradient(to right, #F59E0B, #F97316);
+    -fx-text-fill: #111827;
+
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+
+    -fx-background-radius: 12;
+    -fx-padding: 8 16 8 16;
+
+    -fx-cursor: hand;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8, 0.2, 0, 2);
+}
+
+.add-task-btn:hover,
+.column-add-task:hover {
+    -fx-background-color: linear-gradient(to right, #FBBF24, #FB923C);
+}
+
+.add-task-btn:pressed,
+.column-add-task:pressed {
+    -fx-background-color: linear-gradient(to right, #D97706, #EA580C);
+    -fx-translate-y: 1;
+}
+
+.column-add-task {
+    -fx-background-color: linear-gradient(to right, #F59E0B, #F97316);
+    -fx-text-fill: #111827;
+
+    -fx-background-radius: 12;
+
+    -fx-cursor: hand;
+}
+
+
+.inputField {
+    -fx-background-color: #F8F9FB;
+    -fx-background-radius: 12;
+    -fx-border-radius: 6;
+
+    -fx-border-color: #D9DEE7;
+    -fx-border-width: 1;
+
+    -fx-padding: 7 11 7 11;
+
+    -fx-font-size: 12px;
+    -fx-font-weight: 500;
+
+    -fx-text-fill: #253046;
+    -fx-prompt-text-fill: #253046;
+}
+
+.inputField:focused {
+    -fx-background-color: white;
+    -fx-border-color: #B8C4D6;
+    -fx-border-width: 1.2;
+}
+
+
+.largeInputField {
+    -fx-background-color: #F8F9FB;
+    -fx-background-radius: 12;
+    -fx-border-radius: 6;
+
+    -fx-border-color: #D9DEE7;
+    -fx-border-width: 1;
+
+    -fx-font-size: 12px;
+    -fx-font-weight: 500;
+
+    -fx-text-fill: #253046;
+    -fx-prompt-text-fill: #253046;
+}
+
+.largeInputField .content {
+    -fx-background-color: #F8F9FB;
+    -fx-background-radius: 12;
+}
+
+.largeInputField:focused {
+    -fx-background-color: white;
+    -fx-border-color: #B8C4D6;
+}
+
+.date-picker {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+
+.date-picker .text-field {
+    -fx-background-color: #F8F9FB;
+
+    -fx-background-radius: 6 0 0 6;
+    -fx-border-radius: 6 0 0 6;
+
+    -fx-border-color: #D9DEE7;
+    -fx-border-width: 1;
+
+    -fx-padding: 7 11 7 11;
+
+    -fx-font-size: 12px;
+    -fx-font-weight: 500;
+
+    -fx-text-fill: #253046;
+    -fx-prompt-text-fill: #253046;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #F8F9FB;
+
+    -fx-background-radius: 0 6 6 0;
+    -fx-border-radius: 0 6 6 0;
+
+    -fx-border-color: #D9DEE7;
+    -fx-border-width: 1 1 1 0;
+
+    -fx-padding: 0 6 0 6;
+}
+
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: #EEF2F7;
+}
+
+
+.date-picker .text-field:focused {
+    -fx-background-color: white;
+    -fx-border-color: #B8C4D6;
+}
+
+.finish-btn {
+    -fx-background-color: #F3F4F6;
+
+    -fx-text-fill: #111827;
+    -fx-font-size: 13px;
+
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+
+    -fx-border-color: #D1D5DB;
+    -fx-border-width: 1;
+
+    -fx-cursor: hand;
+}
+
+.finish-btn:hover {
+    -fx-background-color: #EDEFF2;
+}
+
+.finish-btn:pressed {
+    -fx-background-color: #E5E7EB;
+}
+
+.save-btn,
+.edit-btn,
+.progress-btn-start,
+.progress-btn-complete,
+.progress-btn-reopen,
+.delete-btn {
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.save-btn {
+    -fx-background-color: #F4A300;
+
+    -fx-background-radius: 8;
+    -fx-padding: 6 16 6 16;
+}
+
+.save-btn:hover {
+    -fx-background-color: #DB9200;
+}
+
+.save-btn:pressed {
+    -fx-background-color: #C67F00;
+}
+
+.save-btn:focused {
+    -fx-effect: none;
+}
+
+.edit-btn {
+    -fx-background-color: #6B7280;
+
+    -fx-background-radius: 8;
+    -fx-padding: 6 16 6 16;
+}
+
+.edit-btn:hover {
+    -fx-background-color: #555C68;
+}
+
+.edit-btn:pressed {
+    -fx-background-color: #434955;
+}
+
+.progress-btn-start {
+    -fx-background-color: #F4A300;
+
+    -fx-background-radius: 10;
+    -fx-padding: 6 16;
+}
+
+.progress-btn-start:hover {
+    -fx-background-color: #DB9200;
+}
+
+.progress-btn-start:pressed {
+    -fx-background-color: #C67F00;
+}
+
+.progress-btn-complete {
+    -fx-background-color: #22C55E;
+
+    -fx-background-radius: 10;
+    -fx-padding: 6 16;
+}
+
+.progress-btn-complete:hover {
+    -fx-background-color: #16A34A;
+}
+
+.progress-btn-complete:pressed {
+    -fx-background-color: #15803D;
+}
+
+.progress-btn-reopen {
+    -fx-background-color: #6B7280;
+
+    -fx-background-radius: 10;
+    -fx-padding: 6 16;
+}
+
+.progress-btn-reopen:hover {
+    -fx-background-color: #555C68;
+}
+
+.progress-btn-reopen:pressed {
+    -fx-background-color: #434955;
+}
+
+
+.delete-btn {
+    -fx-background-color: #EF4444;
+
+    -fx-background-radius: 8;
+    -fx-padding: 6 16 6 16;
+}
+
+.delete-btn:hover {
+    -fx-background-color: #DC2626;
+}
+
+.delete-btn:pressed {
+    -fx-background-color: #B91C1C;
+}
+
+.card {
+    -fx-cursor: hand;
+
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 10, 0.3, 0, 3);
+
+    -fx-padding: 12 0 12 0;
+    -fx-spacing: 5;
+}
+
+.task-column {
+    -fx-background-color: #F7F7F9;
+
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+
+    -fx-border-color: #ECECF2;
+    -fx-border-width: 1;
+
+    -fx-padding: 14;
+}
+
+
+.radio-button {
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+}
+
+.radio-button .radio {
+    -fx-background-color: #F3F4F6;
+
+    -fx-border-color: #E5E7EB;
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+
+    -fx-padding: 4;
+}
+
+.radio-button:hover .radio {
+    -fx-border-color: #D1D5DB;
+}
+
+.radio-button .dot {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%;
+}
+
+.radio-button:selected .radio {
+    -fx-border-color: #262525;
+    -fx-background-color: #262525;
+}
+
+
+.prio-low,
+.prio-medium,
+.prio-high {
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 0 12;
+    -fx-opacity: .8;
+}
+
+.prio-low {
+    -fx-text-fill: #22C55E;
+}
+
+.prio-medium {
+    -fx-text-fill: #F59E0B;
+}
+
+.prio-high {
+    -fx-text-fill: #EF4444;
+}
+
+.days-remaining {
+    -fx-font-weight: bold;
+    -fx-padding: 0 12 0 0;
+    -fx-opacity: .8;
+}
+
+.days-remaining-overdue {
+    -fx-text-fill: #EF4444;
+
+    -fx-font-weight: bold;
+    -fx-padding: 0 12 0 0;
+    -fx-opacity: .8;
+}
+
+.task-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-wrap-text: true;
+    -fx-padding: 0 6 0 6;
+}
+
+.task-desc {
+    -fx-wrap-text: true;
+    -fx-padding: 0 6 0 6;
+}
+
+.clear-btn {
+    -fx-background-color: #374151;
+    -fx-text-fill: #F9FAFB;
+    -fx-background-radius: 8;
+    -fx-padding: 6 16;
+    -fx-font-weight: 600;
+    -fx-cursor: hand;
+}
+
+
+.clear-btn:hover {
+    -fx-background-color: #2F3A4A;
+}
+
+
+.clear-btn:pressed {
+    -fx-background-color: #1F2937;
+}
+
+.clear-btn:focused {
+    -fx-effect: none;
+}
