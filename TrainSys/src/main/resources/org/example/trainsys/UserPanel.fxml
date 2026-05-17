@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1400.0" stylesheets="@global.css, @user.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.trainsys.controller.UserController">
+
+    <children>
+
+        <Label fx:id="notifLabel" layoutX="650.0" layoutY="10.0" />
+
+
+        <Text layoutX="56.0" layoutY="50.0" text="Schedules">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Text>
+
+        <Pane layoutX="56.0" layoutY="62.0" prefHeight="315.0" prefWidth="674.0" styleClass="containerBackground">
+
+            <children>
+
+                <ComboBox fx:id="depCb" layoutX="22.0" layoutY="15.0" prefWidth="150.0" />
+                <ComboBox fx:id="destCb" layoutX="207.0" layoutY="15.0" prefWidth="150.0" />
+
+                <Button fx:id="clearSearchBtn" layoutX="378.0" layoutY="17.0" styleClass="clear-btn" text="Clear" />
+
+                <Button fx:id="searchBtn" layoutX="584.0" layoutY="17.0" styleClass="search-btn" text="Search" />
+
+                <TableView fx:id="trainTableView" layoutX="22.0" layoutY="65.0" prefHeight="231.0" prefWidth="630.0">
+
+                    <columns>
+                        <TableColumn fx:id="trainNameCol" prefWidth="110.0" text="Train" />
+                        <TableColumn fx:id="trainDepCol" prefWidth="110.0" text="Departure" />
+                        <TableColumn fx:id="trainDestCol" prefWidth="110.0" text="Destination" />
+                        <TableColumn fx:id="trainDateCol" prefWidth="100.0" text="Date" />
+                        <TableColumn fx:id="trainTimeCol" prefWidth="100.0" text="Time" />
+                        <TableColumn fx:id="trainSeatsCol" prefWidth="100.0" text="Seats" />
+                    </columns>
+
+                </TableView>
+
+            </children>
+        </Pane>
+
+
+        <Text layoutX="56.0" layoutY="425.0" text="My Bookings">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Text>
+
+        <Pane fx:id="ticketsWrapper" layoutX="56.0" layoutY="442.0" prefHeight="286.0" prefWidth="674.0" styleClass="containerBackground">
+
+            <children>
+
+                <TableView fx:id="ticketTableView" layoutX="121.0" layoutY="18.0" prefHeight="250.0" prefWidth="432.0">
+
+                    <columns>
+                        <TableColumn fx:id="ticketNameCol" prefWidth="120.0" text="Name" />
+                        <TableColumn fx:id="ticketDetailsCol" prefWidth="320.0" text="Ticket Details" />
+                    </columns>
+
+                </TableView>
+
+                <ImageView fx:id="cancelTicketBtn" fitHeight="25.0" fitWidth="28.0" layoutX="120.0" layoutY="280.0">
+                    <image>
+                        <Image url="@images/deleteIcon.png" />
+                    </image>
+                </ImageView>
+      
+                <ImageView fx:id="downloadTicketsBtn" fitHeight="30.0" fitWidth="28.0" layoutX="180.0" layoutY="277.0">
+                    <image>
+                        <Image url="@images/downloadIcon.png" />
+                    </image>
+                </ImageView>
+
+            </children>
+        </Pane>
+
+        <Text layoutX="876.0" layoutY="50.0" text="Seats">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Text>
+
+        <Pane fx:id="seatsPane" layoutX="877.0" layoutY="62.0" prefHeight="310.0" prefWidth="470.0" styleClass="containerBackground">
+
+            <children>
+
+                <Text fx:id="noSeatsLabel" layoutX="165.0" layoutY="160.0" text="Select a train to view seats" />
+
+                <ScrollPane fx:id="seatsPanel" layoutX="17.0" layoutY="24.0" prefHeight="262.0" prefWidth="439.0">
+
+                    <content>
+                        <AnchorPane prefHeight="282.0" prefWidth="382.0" />
+                    </content>
+
+                </ScrollPane>
+
+            </children>
+        </Pane>
+
+
+        <Text fx:id="paymentText" layoutX="876.0" layoutY="426.0" text="Payment">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Text>
+
+        <Pane fx:id="paymentPanel" layoutX="877.0" layoutY="442.0" prefHeight="286.0" prefWidth="470.0" styleClass="containerBackground">
+
+            <children>
+
+                <TextField fx:id="nameField" layoutX="145.0" layoutY="14.0" prefWidth="180.0" promptText="Name" styleClass="paymentInput" />
+
+                <TextField fx:id="emailField" layoutX="145.0" layoutY="56.0" prefWidth="180.0" promptText="Email" styleClass="paymentInput" />
+
+                <RadioButton fx:id="standardClassBtn" layoutX="145.0" layoutY="97.0" text="Standard" />
+
+                <RadioButton fx:id="vipClassBtn" layoutX="286.0" layoutY="97.0" text="VIP" />
+
+                <Button fx:id="cardPaymentBtn" layoutX="145.0" layoutY="131.0" styleClass="paymentMethodBtn" text="Card" />
+
+                <Button fx:id="cashPaymentBtn" layoutX="277.0" layoutY="131.0" styleClass="paymentMethodBtn" text="Cash" />
+
+                <Label fx:id="finalPriceLabel" alignment="CENTER" layoutX="195.0" layoutY="195.0" textAlignment="CENTER" textFill="#52c41a">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+
+                <Button fx:id="completePaymentBtn" layoutX="200.0" layoutY="240.0" styleClass="paymentBtn" text="Purchase" />
+
+                <Pane fx:id="cardPaymentPane" layoutX="135.0" layoutY="160.0" prefHeight="130.0" prefWidth="200.0">
+
+                    <children>
+      
+                                    <ImageView fitHeight="130.0" fitWidth="272.0" layoutX="-36.0">
+                            <image>
+                                <Image url="@images/creditCard.png" />
+                            </image>
+                        </ImageView>
+
+                        <TextField fx:id="cardNumField" layoutX="20.0" layoutY="32.0" prefHeight="16.0" prefWidth="160.0" styleClass="cardPaymentInput" />
+
+                        <TextField fx:id="cardCvvField" layoutX="136.0" layoutY="82.5" prefWidth="40.0" styleClass="cardPaymentInput" />
+
+                    </children>
+                </Pane>
+
+            </children>
+        </Pane>
+      <Button fx:id="logoutBtn" layoutX="1312.0" layoutY="17.0" mnemonicParsing="false" styleClass="logout-btn" text="Logout" />
+      <Text fill="#00000080" layoutX="1264.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+
+    </children>
+</AnchorPane>

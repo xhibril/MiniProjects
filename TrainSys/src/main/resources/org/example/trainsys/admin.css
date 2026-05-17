@@ -1,0 +1,74 @@
+.root {
+    -fx-background-color: #F3F4F4;
+}
+
+.statisticsBackground, .trainsBackground, .addTrainBackground, .seatsBackground{
+    -fx-background-color: #FFFFFF   ;
+    -fx-background-radius: 10;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 10, 0.3, 0, 3);
+}
+
+
+.trainsBackground {
+    -fx-padding: 20 0 0 0;
+}
+
+
+
+.trainNameInput,
+.seatsInput,
+.departureInput,
+.destinationInput,
+.timeInput,
+.dateInput {
+    -fx-background-color: #F9FAFB;
+    -fx-border-color: #E5E7EB;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-padding: 6 10;
+}
+
+
+.trainNameInput:hover,
+.seatsInput:hover,
+.departureInput:hover,
+.destinationInput:hover,
+.timeInput:hover,
+.dateInput:hover {
+    -fx-border-color: #D1D5DB;
+}
+
+
+.trainNameInput:focused,
+.seatsInput:focused,
+.departureInput:focused,
+.destinationInput:focused,
+.timeInput:focused,
+.dateInput:focused {
+    -fx-border-color: #6D28D9;
+    -fx-background-color: white;
+}
+
+
+.add-btn {
+    -fx-background-color: #6D28D9;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-padding: 6 16 6 16;
+    -fx-font-weight: 600;
+}
+
+
+.add-btn:hover {
+    -fx-background-color: #5B21B6;
+}
+
+
+.add-btn:pressed {
+    -fx-background-color: #4C1D95;
+}
+
+.add-btn:focused {
+    -fx-effect: none;
+}

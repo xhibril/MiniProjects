@@ -1,0 +1,113 @@
+.paymentInput {
+    -fx-background-color: #F9FAFB;
+    -fx-border-color: #E5E7EB;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-padding: 6 10;
+}
+
+.paymentInput:hover {
+    -fx-border-color: #D1D5DB;
+}
+
+.paymentInput:focused {
+    -fx-border-color: #6D28D9;
+    -fx-background-color: white;
+}
+
+.cardPaymentInput {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.cardPaymentInput,
+.cardPaymentInput:hover,
+.cardPaymentInput:focused,
+.cardPaymentInput:focused:hover {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-effect: null;
+}
+
+.paymentBtn {
+    -fx-background-color: #6D28D9;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-padding: 6 16 6 16;
+    -fx-font-weight: 600;
+}
+
+.paymentBtn:hover {
+    -fx-background-color: #5B21B6;
+}
+
+.paymentBtn:pressed {
+    -fx-background-color: #4C1D95;
+}
+
+.paymentBtn:focused {
+    -fx-effect: none;
+}
+
+.paymentMethodBtn {
+    -fx-background-color: #F3F4F6;
+    -fx-text-fill: #374151;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #E5E7EB;
+    -fx-padding: 6 14;
+    -fx-cursor: hand;
+}
+
+.paymentMethodBtn:hover {
+    -fx-background-color: #E5E7EB;
+}
+
+.paymentMethodBtn:pressed {
+    -fx-background-color: #D1D5DB;
+}
+
+.paymentMethodBtn:selected {
+    -fx-background-color: #6366F1;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+
+.radio-button {
+    -fx-text-fill: #374151;
+    -fx-font-size: 13px;
+}
+
+.radio-button .radio {
+    -fx-background-color: #F3F4F6;
+    -fx-border-color: #E5E7EB;
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+    -fx-padding: 4;
+}
+
+.radio-button:hover .radio {
+    -fx-border-color: #D1D5DB;
+}
+
+.radio-button .dot {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%;
+}
+
+.radio-button:selected .radio {
+    -fx-border-color: #6366F1;
+    -fx-background-color: #6366F1;
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: white;
+}

@@ -1,0 +1,103 @@
+.root {
+    -fx-background-image: url("images/background-auth.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: #F3F4F4;
+}
+
+.continue-button {
+    -fx-background-color: linear-gradient(to right, #7B61FF, #5A54F9);
+    -fx-background-radius: 14;
+    -fx-cursor: hand;
+
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+
+    -fx-padding: 12 38 12 38;
+
+    -fx-effect: dropshadow(gaussian, rgba(91,84,249,0.35), 18, 0.2, 0, 4);
+
+    -fx-border-color: transparent;
+}
+
+.continue-button:hover {
+    -fx-background-color: linear-gradient(to right, #8A72FF, #6862FF);
+
+    -fx-effect: dropshadow(gaussian, rgba(91,84,249,0.5), 24, 0.25, 0, 6);
+
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.continue-button:pressed {
+    -fx-background-color: linear-gradient(to right, #6450E8, #4E47D8);
+
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+.inputFields {
+    -fx-background-color: #F9FAFB;
+    -fx-border-color: #E5E7EB;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-padding: 6 10;
+}
+
+.inputFields:hover {
+    -fx-border-color: #D1D5DB;
+}
+
+.inputFields:focused {
+    -fx-border-color: #6D28D9;
+    -fx-background-color: white;
+}
+
+
+
+
+.authCard {
+    -fx-background-color: white;
+    -fx-background-radius: 18;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.18), 20, 0.2, 0, 6);
+}
+
+.flowBubble {
+    -fx-background-color: white;
+    -fx-background-radius: 18;
+
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 18, 0.2, 0, 6);
+}
+
+.hyperlink:focused {
+    -fx-border-color: transparent;
+    -fx-effect: none;
+}
+
+
+.radio-button .radio {
+    -fx-background-color: #F3F4F6;
+    -fx-border-color: #E5E7EB;
+    -fx-border-radius: 50%;
+    -fx-background-radius: 50%;
+    -fx-padding: 4;
+}
+
+.radio-button:hover .radio {
+    -fx-border-color: #D1D5DB;
+}
+
+.radio-button .dot {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%;
+}
+
+.radio-button:selected .radio {
+    -fx-border-color: #585860;
+    -fx-background-color: #585860;
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: white;
+}

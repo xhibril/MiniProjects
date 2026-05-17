@@ -103,12 +103,7 @@ public class TaskBoardController {
                 addingTaskLayoutOff();
                 isAddingTask = false;
             } else {
-                Parent oldParent = taskFieldsPane.getParent();
-
-                if (oldParent instanceof Pane p) {
-                    p.getChildren().remove(taskFieldsPane);
-                }
-
+                removeFromParent(taskFieldsPane);
                 currentStatus = status;
 
                 taskFieldsPane.setMinHeight(378);
